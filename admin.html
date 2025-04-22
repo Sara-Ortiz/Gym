@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymPro - Panel de Administrador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"><!-- logos -->
+    <link rel="stylesheet" href="/css/admin.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>GymPro</span>
+                </div>
+            </div>
+            <div class="menu-items">
+                <a href="#" class="menu-item active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="rutina.html" class="menu-item">
+                    <i class="fas fa-users"></i>
+                    <span>Rutina, Plan Nutricional</span>
+                </a>
+                <a href="productos_reservas.html" class="menu-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Productos, Reservas</span>
+                </a>
+                <a href="clientes.html" class="menu-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Sucursales,Clientes</span>
+                </a>
+                <a href="visitantes.html" class="menu-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>visitantes</span>
+                </a>
+                
+                <a href="index.html" class="menu-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Cerrar Sesión</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="main-content">
+            
+            
+            <div class="dashboard">
+                <h2 class="page-title">Dashboard</h2>
+                
+                <!-- Stats Row -->
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <div class="stat-card-value">248</div>
+                            <div class="stat-card-label">Miembros activos</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <div class="stat-card-value">56</div>
+                            <div class="stat-card-label">Clases hoy</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <div class="stat-card-value">128</div>
+                            <div class="stat-card-label">Reservas hoy</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="stat-card-info">
+                            <div class="stat-card-value">$12,450</div>
+                            <div class="stat-card-label">Ingresos mensuales</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Charts Row -->
+                <div class="charts-container">
+                    <div class="chart-card">
+                        <div class="chart-header">
+                            <div class="chart-title">Asistencia Mensual</div>
+                            <div class="chart-actions">
+                                <select>
+                                    <option>Últimos 30 días</option>
+                                    <option>Últimos 60 días</option>
+                                    <option>Últimos 90 días</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="chart-content">
+                            <img src="https://daymsa.com/wp-content/uploads/grafico-2-1-480x272.png" alt="Gráfico de Asistencia">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Recent Members Table -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <div class="table-title">Miembros Recientes</div>
+                        <div class="table-actions">
+                            <button>
+                                <i class="fas fa-plus"></i>
+                                Añadir Miembro
+                            </button>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Plan</th>
+                                <th>Fecha de Inicio</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#1001</td>
+                                <td>María López</td>
+                                <td>Premium Anual</td>
+                                <td>15/04/2025</td>
+                                <td><span class="status status-active">Activo</span></td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1002</td>
+                                <td>Carlos Ruiz</td>
+                                <td>Estándar Mensual</td>
+                                <td>12/04/2025</td>
+                                <td><span class="status status-active">Activo</span></td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1003</td>
+                                <td>Ana Torres</td>
+                                <td>Premium Mensual</td>
+                                <td>10/04/2025</td>
+                                <td><span class="status status-pending">Pendiente</span></td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1004</td>
+                                <td>Pedro García</td>
+                                <td>Básico Mensual</td>
+                                <td>05/04/2025</td>
+                                <td><span class="status status-inactive">Inactivo</span></td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#1005</td>
+                                <td>Sofía Martínez</td>
+                                <td>Premium Anual</td>
+                                <td>01/04/2025</td>
+                                <td><span class="status status-active">Activo</span></td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Upcoming Classes Table -->
+                <div class="table-card">
+                    <div class="table-header">
+                        <div class="table-title">Próximas Clases</div>
+                        <div class="table-actions">
+                            <button>
+                                <i class="fas fa-plus"></i>
+                                Añadir Clase
+                            </button>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Clase</th>
+                                <th>Entrenador</th>
+                                <th>Horario</th>
+                                <th>Duración</th>
+                                <th>Capacidad</th>
+                                <th>Reservas</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Spinning</td>
+                                <td>Laura Vega</td>
+                                <td>Hoy, 09:00</td>
+                                <td>45 min</td>
+                                <td>20</td>
+                                <td>18</td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CrossFit</td>
+                                <td>Marcos Díaz</td>
+                                <td>Hoy, 10:00</td>
+                                <td>60 min</td>
+                                <td>15</td>
+                                <td>12</td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Yoga</td>
+                                <td>Isabel Ramos</td>
+                                <td>Hoy, 11:30</td>
+                                <td>60 min</td>
+                                <td>25</td>
+                                <td>20</td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zumba</td>
+                                <td>Carmen Flores</td>
+                                <td>Hoy, 17:00</td>
+                                <td>45 min</td>
+                                <td>30</td>
+                                <td>25</td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Pilates</td>
+                                <td>Sara López</td>
+                                <td>Hoy, 18:30</td>
+                                <td>50 min</td>
+                                <td>15</td>
+                                <td>10</td>
+                                <td class="table-actions-cell">
+                                    <div class="action-btn edit-btn">
+                                        <i class="fas fa-edit"></i>
+                                    </div>
+                                    <div class="action-btn delete-btn">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
